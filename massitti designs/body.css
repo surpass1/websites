@@ -1,0 +1,23 @@
+
+body{
+	
+	color:#666;
+	background:url('images/bg.jpg') no-repeat center center;
+	
+	min-height:100%;
+
+	/* Display the background fullscreen */
+	background-size:cover;
+
+	
+}
+ 
+ 
+.paul{
+	background:url('massitti/k.png') no-repeat center center;
+	
+	min-height:100%;
+
+	/* Display the background fullscreen */
+	background-size:cover;
+}

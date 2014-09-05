@@ -1,0 +1,222 @@
+/* @override http://joomla.blogdns.org/serenity10/templates/js_serenity/css/nav.css */
+
+
+/* @group NAVBAR */
+
+.menubar {
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#navmenu {
+	height: 25px;
+	padding: 0px 0px 0px 5px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10000;
+	float: none;
+}
+
+#navmenu ul {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	margin-left: 2px;
+}
+
+#navmenu ul li {
+	position: relative;
+	margin: 0;
+}
+
+/*PARENT MENU*/
+
+#navmenu a {
+	float: left;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	height: 25px;
+	line-height: 25px;
+	padding: 0px 13px; /* separation between text buttons*/
+}
+
+/*PARENT MENU ITEM HOVER*/
+#navmenu li a:hover {
+	height: 25px;
+}
+#navmenu li a:hover {
+/*background-color: red;*/
+}
+
+/*ALL LISTS*/
+
+#navmenu li {
+	float: left;
+	padding: 0;
+	background: none;
+}
+
+#navmenu ul ul a {
+	background: none;
+	border: none;
+}
+
+#navmenu li:hover ul, 
+#navmenu li li:hover ul, 
+#navmenu li li li:hover ul, 
+#navmenu li li li li:hover ul,
+#navmenu li.iehover ul, 
+#navmenu li li.iehover ul, 
+#navmenu li li li.iehover ul,
+#navmenu li li li li.iehover ul {
+}
+
+/*PARENT ITEM SEPARATOR*/
+
+#navmenu li a {
+/* 	border-right: 1px solid red; */
+}
+
+
+
+
+/*DEFINE HOVER COLORS*/
+
+#navmenu li:hover a, #navmenu li.iehover a {
+}
+
+#navmenu ul li a:hover,
+#navmenu ul li ul li a:hover,
+#navmenu ul li ul li ul li a:hover {
+}
+
+/*SUBLEVEL STYLES*/
+
+/*SUBLEVEL TEXT STYLES*/
+
+#navmenu li li a {
+	font-weight: normal;
+	padding: 0;
+	height: 25px;
+	line-height: 25px;
+	text-indent: 5px;
+}
+
+#navmenu ul ul a {
+	display: block;
+	text-decoration: none;
+	width: 170px;
+	text-transform: none;
+}
+
+#navmenu li li {
+	padding: 0;
+	background: none;
+	/*DONT SHOW THE BACKGROUND IMAGE*/
+}
+
+/*SUBLEVEL POSITIONING*/
+
+#navmenu li li {
+	float: left;
+	padding: 0;
+	width: 173px;
+}
+
+#navmenu li ul ul {
+	margin: -25px 0 0 173px;
+}
+
+#navmenu li:hover, #navmenu li.iehover {
+	left: 0;
+}
+
+/*SUBLEVEL HOVER STYLES*/
+
+#navmenu ul ul a:hover {
+	background: none;
+	height: 25px;
+	line-height: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+#navmenu li li:hover {
+}
+/* BECAUSE IE DOESNT UNDERSTAND CSS EVEN IN 2007 */
+
+#navmenu li.iehover ul li.iehover {
+}
+
+
+#navmenu li ul {
+	top: 25px;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 173px;
+	font-weight: normal;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#navmenu li.active a {
+}
+#navmenu li.active a:hover {
+}
+
+/* NO SUBLEVEL ACTIVE STYLES */
+#navmenu ul li.active ul li a,
+#navmenu ul li.active ul li,
+#navmenu ul li.active ul li a:hover,
+#navmenu ul li.active ul li.hover {
+	background-image: none;
+}
+/*SUBLEVEL PARENT INDICATORS*/
+
+
+#navmenu ul li ul li a.child,
+#navmenu ul li ul li a.child:hover {
+	background: url(../images/arrow_right.gif) 100% 50% no-repeat;
+}
+
+#navmenu ul li.active ul li a.child,
+#navmenu ul li.active ul li a.child:hover {
+	background: url(../images/arrow_right.gif) 100% 50% no-repeat;
+}
+
+
+#navmenu ul li ul li a:hover {
+	background-image: none;
+}
+
+/* HIDE OTHER LISTS FROM IE */
+
+#navmenu li:hover ul ul, 
+#navmenu li:hover ul ul ul,
+#navmenu li:hover ul ul ul ul,  
+#navmenu li.iehover ul ul, 
+#navmenu li.iehover ul ul ul, 
+#navmenu li.iehover ul ul ul ul {
+	left: -999em;
+}
+
+#navmenu li:hover ul, 
+#navmenu li li:hover ul, 
+#navmenu li li li:hover ul, 
+#navmenu li li li li:hover ul,
+#navmenu li.iehover ul, 
+#navmenu li li.iehover ul, 
+#navmenu li li li.iehover ul,
+#navmenu li li li li.iehover ul {
+	z-index: 100;
+	left: 0;
+}
+
+
+/* @end */

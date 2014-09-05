@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+		background:url('../img/l.png') no-repeat center center;
+		min-height:100%;
+		
+		/*Display the bacground fullscreen*/
+		background-size:cover;
+	}
